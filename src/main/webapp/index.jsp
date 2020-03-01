@@ -13,10 +13,8 @@
     <title>Hello World</title>
 </head>
 <body>
-<%--komentarz JSP--%>
-<!-- komentarz HTML -->
-
-<p>Licznik odwiedzin : <%= ++visitCount%>
-</p>
+<p> Server name : ${pageContext.request.serverName}</p>
+<p> Server name : ${pageContext.request.serverName}</p>
+<p>Request URI ${pageContext.request.requestURI}</p>
 </body>
 </html>
