@@ -17,6 +17,8 @@
 <p> Server name : ${pageContext.request.serverName}</p>
 <p>Request URI ${pageContext.request.requestURI}</p>
 
-<jsp:forward page="redirected.jsp"/>
+<jsp:forward page="redirected.jsp">
+    <jsp:param name="myParam" value="my parametr"/>
+</jsp:forward>
 </body>
 </html>
