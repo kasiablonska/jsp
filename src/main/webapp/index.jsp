@@ -26,5 +26,7 @@
     <input type="submit" value="wyślij">
 </form>
 
+<a href="search.jsp?query=blablabla&page=25&sort=desc">link</a>
+
 </body>
 </html>
