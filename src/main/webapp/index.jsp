@@ -8,6 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="calculator" class="pl.sda.jsp.utils.Calculator"/>
+<jsp:setProperty name="calculator" property="n" value="5"/>
 <html>
 <head>
     <title>Hello World</title>
@@ -15,8 +16,8 @@
 <body>
 
 <p>
-    5<sup>2</sup> wynosi :
-    <% calculator.setN(5);
+    <%= calculator.getN()%><sup>2</sup> wynosi :
+    <%
         final int square =calculator.square();
     out.print(square);
     %>
