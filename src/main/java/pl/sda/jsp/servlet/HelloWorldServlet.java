@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-//@WebServlet(name = "HelloWorldServlet"
-//        , urlPatterns = {"/", "/hello"}
-//)
+@WebServlet(name = "HelloWorldServlet"
+        , urlPatterns = {"/", "/hello"}
+)
 
 public class HelloWorldServlet extends HttpServlet {
 
@@ -23,5 +23,7 @@ public class HelloWorldServlet extends HttpServlet {
             , HttpServletResponse response) throws IOException {
         final PrintWriter writer = response.getWriter();
         writer.println("Hello World");
+
+        response.sendRedirect("home.jsp");
     }
 }
